@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.7" %}
 
 package:
   name: dcmstack
@@ -7,7 +7,7 @@ package:
 source:
   fn: dcmstack-{{ version }}.tar.gz
   url: https://github.com/moloney/dcmstack/archive/v{{ version }}.tar.gz
-  md5: 3409d0bcbb79e1790cb2639c7bfb1a6a
+  md5: 34fea448a122bca5ae3234286f15308a
 
 build:
   number: 0
