@@ -6,7 +6,7 @@ package:
 
 source:
   fn: dcmstack-{{ version }}.tar.gz
-  url: https://github.com/moloney/dcmstack/archive/v{{ version }}.tar.gz
+  url: https://codeload.github.com/moloney/dcmstack/archive/v{{ version }}.tar.gz
   md5: d500c76f73737c13c5729f87649e4892
 
 build:
