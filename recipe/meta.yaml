@@ -31,6 +31,7 @@ test:
 about:
   home: http://dcmstack.readthedocs.io/
   license: MIT
+  license_file: COPYING
   summary: This package provides DICOM to Nifti conversion with the added ability to extract and summarize meta data from the source DICOMs.
 
 extra:
