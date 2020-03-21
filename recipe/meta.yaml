@@ -1,4 +1,4 @@
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: dcmstack
@@ -7,10 +7,10 @@ package:
 source:
   fn: dcmstack-{{ version }}.tar.gz
   url: https://github.com/moloney/dcmstack/archive/v{{ version }}.tar.gz
-  md5: 34fea448a122bca5ae3234286f15308a
+  md5: d500c76f73737c13c5729f87649e4892
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [py3k]
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
