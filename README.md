@@ -177,4 +177,5 @@ Feedstock Maintainers
 =====================
 
 * [@arokem](https://github.com/arokem/)
+* [@kastman](https://github.com/kastman/)
 
