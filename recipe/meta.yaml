@@ -1,31 +1,41 @@
-{% set version = "0.8" %}
+{% set name = "dcmstack" %}
+{% set version = "0.8.0" %}
+
 
 package:
-  name: dcmstack
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: dcmstack-{{ version }}.tar.gz
-  url: https://github.com/moloney/dcmstack/archive/v{{ version }}.tar.gz
-  sha256: b879e1cb30a7d761476b79d11627b76d937a2637799fae6afb4c0317a42d639e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dcmstack-{{ version }}.tar.gz
+  sha256: 12ea9851c18d5196104e57d412f7d27f6f3942ecdce3db488cba95fc26abff04
 
 build:
   number: 2
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  entry_points:
+    - dcmstack = dcmstack.dcmstack_cli:main
+    - nitool = dcmstack.nitool_cli:main
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
-    - setuptools
-    - nibabel
+    - pip
+    - python >=3.6
   run:
-    - python
-    - pydicom
-    - nibabel
+    - nibabel >=2.1.0
+    - pydicom >=0.9.7
+    - python >=3.6
 
 test:
   imports:
     - dcmstack
+  commands:
+    - pip check
+    - dcmstack --help
+    - nitool --help
+  requires:
+    - pip
 
 about:
   home: http://dcmstack.readthedocs.io/
