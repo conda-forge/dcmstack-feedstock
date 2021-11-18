@@ -10,11 +10,11 @@ source:
   sha256: b879e1cb30a7d761476b79d11627b76d937a2637799fae6afb4c0317a42d639e
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - nibabel
