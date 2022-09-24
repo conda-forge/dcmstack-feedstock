@@ -1,5 +1,5 @@
 {% set name = "dcmstack" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dcmstack-{{ version }}.tar.gz
-  sha256: 12ea9851c18d5196104e57d412f7d27f6f3942ecdce3db488cba95fc26abff04
+  sha256: 9e131226fb00cdc72f5c2ad61f82b37020d3f97f272d1becb880168bd4504860
 
 build:
-  number: 2
+  number: 0
   noarch: python
   entry_points:
     - dcmstack = dcmstack.dcmstack_cli:main
