@@ -24,6 +24,7 @@ requirements:
     - python >=3.6
   run:
     - nibabel >=2.1.0
+    - nibabel <4.0
     - pydicom >=0.9.7
     - python >=3.6
 
