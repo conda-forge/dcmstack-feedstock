@@ -11,7 +11,7 @@ source:
   sha256: 12ea9851c18d5196104e57d412f7d27f6f3942ecdce3db488cba95fc26abff04
 
 build:
-  number: 2
+  number: 3
   noarch: python
   entry_points:
     - dcmstack = dcmstack.dcmstack_cli:main
