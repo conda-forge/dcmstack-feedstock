@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dcmstack-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dcmstack-{{ version }}.tar.gz
   sha256: 12ea9851c18d5196104e57d412f7d27f6f3942ecdce3db488cba95fc26abff04
 
 build:
-  number: 3
+  number: 4
   noarch: python
   entry_points:
     - dcmstack = dcmstack.dcmstack_cli:main
@@ -21,12 +21,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - nibabel >=2.1.0
     - nibabel <4.0a0
     - pydicom >=0.9.7
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -37,6 +37,7 @@ test:
     - nitool --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://dcmstack.readthedocs.io/
