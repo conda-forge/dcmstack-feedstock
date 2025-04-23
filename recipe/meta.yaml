@@ -22,6 +22,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools  # Added setuptools here
   run:
     - nibabel >=2.1.0
     - nibabel <4.0a0
