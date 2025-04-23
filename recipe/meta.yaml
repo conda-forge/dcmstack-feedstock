@@ -22,12 +22,14 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools  # Added setuptools here
+    - setuptools
+    - numpy 1.26  # Restrict numpy to version 1.26 in host
   run:
     - nibabel >=2.1.0
     - nibabel <4.0a0
     - pydicom >=0.9.7
     - python >=3.6
+    - numpy 1.26  # Restrict numpy to version 1.26 in run
 
 test:
   imports:
