@@ -23,13 +23,15 @@ requirements:
     - pip
     - python >=3.6
     - setuptools
-    - numpy 1.26  # Restrict numpy to version 1.26 in host
+    - numpy < 2.0  # Restrict numpy
   run:
     - nibabel >=2.1.0
     - nibabel <4.0a0
     - pydicom >=0.9.7
+    - pylibjpeg
     - python >=3.6
-    - numpy 1.26  # Restrict numpy to version 1.26 in run
+    - numpy < 2.0  # Restrict numpy
+
 
 test:
   imports:
