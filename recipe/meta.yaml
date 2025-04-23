@@ -30,6 +30,7 @@ requirements:
     - nibabel <4.0a0
     - pydicom >=0.9.7
     - pylibjpeg
+    - pylibjpeg-libjpeg  # Added required runtime dependency
     - python >=3.6
     - numpy <2.0  # Restrict numpy
 
