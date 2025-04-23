@@ -23,14 +23,14 @@ requirements:
     - pip
     - python >=3.6
     - setuptools
-    - numpy < 2.0  # Restrict numpy
+    - numpy <2.0  # Restrict numpy
   run:
     - nibabel >=2.1.0
     - nibabel <4.0a0
     - pydicom >=0.9.7
     - pylibjpeg
     - python >=3.6
-    - numpy < 2.0  # Restrict numpy
+    - numpy <2.0  # Restrict numpy
 
 
 test:
