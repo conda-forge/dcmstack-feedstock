@@ -23,12 +23,14 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools
+    - numpy <2.0
   run:
     - nibabel >=2.1.0
     - nibabel <4.0a0
     - pydicom >=0.9.7
     - python >={{ python_min }}
     - pylibjpeg-libjpeg >=2.3.0
+    - numpy <2.0
 
 test:
   imports:
