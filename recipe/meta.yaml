@@ -12,11 +12,11 @@ source:
 
 build:
   number: 0
-  noarch: python
   entry_points:
     - dcmstack = dcmstack.dcmstack_cli:main
     - nitool = dcmstack.nitool_cli:main
   script: {{ PYTHON }} -m pip install . -vv
+  skip: True  # [win]
 
 requirements:
   host:
