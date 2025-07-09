@@ -10,7 +10,7 @@ source:
   sha256: 9e131226fb00cdc72f5c2ad61f82b37020d3f97f272d1becb880168bd4504860
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - dcmstack = dcmstack.dcmstack_cli:main
     - nitool = dcmstack.nitool_cli:main
