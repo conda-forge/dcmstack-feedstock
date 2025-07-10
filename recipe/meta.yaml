@@ -28,7 +28,7 @@ requirements:
     - python
     - pylibjpeg-libjpeg >=2.3.0
     - pylibjpeg-openjpeg >=2.4.0
-    - pylibjpeg-rle >=2.1.0. # [py>=310]
+    - pylibjpeg-rle >=2.1.0  # [py>=310]
 
 test:
   imports:
