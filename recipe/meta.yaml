@@ -10,7 +10,7 @@ source:
   sha256: 9e131226fb00cdc72f5c2ad61f82b37020d3f97f272d1becb880168bd4504860
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - dcmstack = dcmstack.dcmstack_cli:main
     - nitool = dcmstack.nitool_cli:main
@@ -23,10 +23,12 @@ requirements:
     - setuptools
   run:
     - nibabel >=5.3.1
-    - pydicom >=0.9.7
     - pint
+    - pydicom >=0.9.7
     - python
     - pylibjpeg-libjpeg >=2.3.0
+    - pylibjpeg-openjpeg >=2.4.0
+    - pylibjpeg-rle >=2.1.0  # [py>=310]
 
 test:
   imports:
