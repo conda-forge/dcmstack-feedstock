@@ -23,8 +23,8 @@ requirements:
     - setuptools
   run:
     - nibabel >=5.3.1
-    - pydicom >=0.9.7
     - pint
+    - pydicom >=0.9.7
     - python
     - pylibjpeg-libjpeg >=2.3.0
     - pylibjpeg-openjpeg >=2.4.0
